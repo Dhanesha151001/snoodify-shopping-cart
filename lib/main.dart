@@ -1,3 +1,4 @@
+import 'package:category/snoodify.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,12 +10,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Snoodify App',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      // home: MyHomePage(title: 'Snoodify App'),
-      // TODO - start coding here
+      home: snoodify(),
+      //
     );
   }
 }
